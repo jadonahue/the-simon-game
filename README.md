@@ -1,6 +1,6 @@
 the-simon-game
 
-This is created with a primary focus on using jQuery.
+This is created with a primary focus on using jQuery. At the moment this is meant to be played on a computer.
 
 Game Rules: 
 - Click the screen (not a button), then press any key to start. 
