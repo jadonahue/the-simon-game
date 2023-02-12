@@ -10,6 +10,13 @@ body {
     color: #FEF2BF;
 }
 
+#tip-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    margin: 5%;
+    color: #FEF2BF;
+}
+
 .container {
     display: block;
     width: 50%;
@@ -49,4 +56,11 @@ body {
 .pressed {
     box-shadow: 0 0 20px white;
     background-color: grey;
+}
+
+#footer-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: .5rem;
+    margin: 5%;
+    color: #FEF2BF;
 }
