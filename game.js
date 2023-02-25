@@ -1,12 +1,12 @@
-var buttonColors = ["red", "blue", "green", "yellow"];
-var gamePattern = [];
-var userClickedPattern = [];
+let buttonColors = ["red", "blue", "green", "yellow"];
+let gamePattern = [];
+let userClickedPattern = [];
 
 // Way to keep track if game is started or not, so you only call nextSequence() on first keypress.
-var started = false;
+let started = false;
 
 // Create new variable called level and start at 0
-var level = 0;
+let level = 0;
 
 // When any key is pressed start the game and call nextSequence function. This also listens for the key to restart after losing.
 $(document).keydown(function () {
@@ -14,14 +14,14 @@ $(document).keydown(function () {
         nextSequence();
         started = true;
     }
-});
+})
 
 
 
 $(".btn").click(function () {
 
     // Store the btn clicked id color the the userChosenColor variable.
-    var userChosenColor = $(this).attr("id");
+    let userChosenColor = $(this).attr("id");
 
     // Adds the userChosenColor to the userClickedPattern array.
     userClickedPattern.push(userChosenColor);
@@ -33,7 +33,7 @@ $(".btn").click(function () {
     animatePress(userChosenColor);
 
     checkAnswer(userClickedPattern.length - 1);
-});
+})
 
 function checkAnswer(currentLevel) {
 
@@ -80,10 +80,10 @@ function nextSequence() {
     $("#level-title").text("Level " + level);
 
     // Generate a random number and round down between 0-3 
-    var randomNumber = Math.floor(Math.random() * 4);
+    let randomNumber = Math.floor(Math.random() * 4);
 
     // Select one of the buttonColors based on the random number generated
-    var randomChosenColor = buttonColors[randomNumber];
+    let randomChosenColor = buttonColors[randomNumber];
 
     // Add the randomChosenColor at the end of the gamePattern array
     gamePattern.push(randomChosenColor);
@@ -97,7 +97,7 @@ function nextSequence() {
 
 // Function which uses the corresponding color sound based on the input given, such as userChosenColor or randomChosenColor. Then plays the audio sound.
 function playSound(name) {
-    var audio = new Audio("sounds/" + name + ".mp3");
+    let audio = new Audio("sounds/" + name + ".mp3");
     audio.play();
 }
 
