@@ -1,7 +1,11 @@
 <h1>The Simon Game</h1>
 
 <p>
-This is created with a primary focus on using jQuery. At the moment this is meant to be played on a computer.
+This is a responsive website game focused on using jQuery. Remember the pattern from start to finish each cycle and repeat it back. How far can you go before you forget?
+</p>
+
+<p>
+At the moment this is meant to be played on a computer.
 </p>
 
 ---
