@@ -25,7 +25,7 @@ Now you must remember the first random color and click, then click the second ra
 </p>
 
 <p>
-- You must remember the color pattern from start to finish and click in the same order as the level increases.
+You must remember the color pattern from start to finish and click in the same order as the level increases.
 The level increases every time you remember the correct order. If you select the wrong color at any time the 
 background will flash red playing the game over sound.
 </p>
